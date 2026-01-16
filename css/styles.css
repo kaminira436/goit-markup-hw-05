@@ -439,6 +439,9 @@ address {
 .footer-social-link svg {
     fill: #f4f4fd;
 }
+.footer-subscribe {
+    margin-left: auto;
+}
 .footer-subscribe-text {
     margin-bottom: 16px;
     font-weight: 500;
@@ -605,6 +608,11 @@ address {
     padding: 8px 16px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea:focus {
     border-color: #4d5ae5;
@@ -623,18 +631,25 @@ address {
     gap: 8px;
     cursor: pointer;
 }
-.checkbox-label::before {
-    content: "";
+.checkbox-custom {
     width: 16px;
     height: 16px;
     border: 1px solid #2e2f42;
     border-radius: 2px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-input:checked+.checkbox-label::before {
+.checkbox-input:checked+.checkbox-label .checkbox-custom {
     background-color: #4d5ae5;
     border-color: #4d5ae5;
+    fill: #ffffff;
 }
+
 .modal-submit {
     display: block;
     margin: 24px auto 0;
@@ -642,7 +657,16 @@ address {
     height: 56px;
     background-color: #4d5ae5;
     color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-submit:hover,
+.modal-submit:focus {
+    background-color: #404bbf;
 }
