@@ -271,7 +271,7 @@ address {
     font-size: 16px;
     line-height: 1.5;
     color: #434455;
-
+    letter-spacing: 0.02em;
 }
 .social-list {
     display: flex;
@@ -567,6 +567,8 @@ address {
     text-align: center;
     margin-bottom: 16px;
     color: #2e2f42;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 .modal-field {
     margin-bottom: 8px;
@@ -579,6 +581,8 @@ address {
     color: #8e8f99;
     margin-bottom: 4px;
     display: block;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 .modal-input-wrap {
     position: relative;
