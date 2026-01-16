@@ -464,6 +464,8 @@ address {
     background-color: transparent;
     border: 1px solid #ffffff;
     border-radius: 4px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-subscribe-input:focus {
     border-color: #31d0aa;
@@ -569,6 +571,9 @@ address {
 .modal-field {
     margin-bottom: 8px;
 }
+.modal-field:last-of-type {
+    margin-bottom: 16px;
+}
 .modal-label {
     font-size: 12px;
     color: #8e8f99;
@@ -630,6 +635,8 @@ address {
     align-items: center;
     gap: 8px;
     cursor: pointer;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
 }
 .checkbox-custom {
     width: 16px;
@@ -669,4 +676,9 @@ address {
 .modal-submit:hover,
 .modal-submit:focus {
     background-color: #404bbf;
+}
+.privacy-link {
+    color: #4d5ae5;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
 }
